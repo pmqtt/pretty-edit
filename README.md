@@ -1,5 +1,5 @@
 # pretty-edit
-pretty-edit is as extension for visual studio code (vscode) that allow to insert increasing numbers and random numbers.
+pretty-edit is a extension for visual studio code (vscode) that allow to insert increasing numbers and random numbers.
 
 ## Usage
 Command: pretty-edit
