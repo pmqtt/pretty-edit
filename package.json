@@ -1,8 +1,11 @@
 {
 	"name": "pretty-edit",
+	"publisher": "cefour",
 	"displayName": "pretty-edit",
 	"description": "",
 	"version": "0.0.1",
+	"icon": "images/icon.jpg",
+	"repository": "https://github.com/pmqtt/pretty-edit",
 	"engines": {
 		"vscode": "^1.42.0"
 	},
