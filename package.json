@@ -2,8 +2,8 @@
 	"name": "pretty-edit",
 	"publisher": "cefour",
 	"displayName": "pretty-edit",
-	"description": "",
-	"version": "0.0.1",
+	"description": "insert increasing numbers and random numbers",
+	"version": "0.4.0",
 	"icon": "images/icon.jpg",
 	"repository": "https://github.com/pmqtt/pretty-edit",
 	"engines": {
