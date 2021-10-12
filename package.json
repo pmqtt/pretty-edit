@@ -2,7 +2,7 @@
 	"name": "pretty-edit",
 	"publisher": "cefour",
 	"displayName": "pretty-edit",
-	"description": "insert increasing numbers and random numbers",
+	"description": "insert increasing numbers, random numbers and letters",
 	"version": "0.4.1",
 	"icon": "images/icon.jpg",
 	"repository": "https://github.com/pmqtt/pretty-edit",
