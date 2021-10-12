@@ -7,13 +7,13 @@ import { executeOnEditor } from './gui/editor.inserter';
 import { Randomizer } from './util/randomizer';
 import { AlphaCommand } from './command/command.alpha';
 
-export class CommandBuilder{
-    public constructor(private cmd : string){
+export abstract class CommandBuilder{
+    public constructor(protected cmd : string){
         
     }
     
     private testIsDigit(digit : string) : boolean{
-        if(parseInt(digit.trim())) {
+        if(parseInt(digit.trim()) !== NaN) {
             return true;
         }
         return false;
@@ -24,16 +24,11 @@ export class CommandBuilder{
         return ch.length === 1 && (ch >= "a" && ch <= "z" || ch >= "A" && ch <= "Z");
     }
 
-    public build(editor : vscode.TextEditor) : void{
-        let call : ICommand = new EmptyCommand("");
-        const command : string [] = this.cmd?.split(";");
-        if(command){
-            executeOnEditor(editor,this.chooseCommand(command));
-        }
+    public abstract build(editor : vscode.TextEditor) : void;
+    
 
-    }
 
-    private chooseCommand(command: string[]):ICommand{
+    public chooseCommand(command: string[]):ICommand{
         if(command.length > 0){
             for(let i = 0; i < command.length; ++i){
                 command[i] = command[i].trim();
